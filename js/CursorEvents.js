@@ -8,7 +8,7 @@ AFRAME.registerComponent("cursor-listener", {
     this.handleMouseLeaveEvents();
   },
   handleClickEvents: function() {
-    //  Click Events
+    //  Eventos de clic.
     this.el.addEventListener("click", evt => {
       const placesContainer = document.querySelector("#places-container");
       const { state } = placesContainer.getAttribute("tour");
@@ -32,7 +32,7 @@ AFRAME.registerComponent("cursor-listener", {
     });
   },
   handleMouseEnterEvents: function() {
-    // Mouse Center Events
+    // Eventos centrales del mouse.
     this.el.addEventListener("mouseenter", () => {
       const placeContainer = document.querySelector("#places-container");
       const { state } = placeContainer.getAttribute("tour");
@@ -56,7 +56,7 @@ AFRAME.registerComponent("cursor-listener", {
     }
   },
   handleMouseLeaveEvents: function() {
-    // Mouse Leave Events
+    // Eventos 'mouseleave' del cursor.
     this.el.addEventListener("mouseleave", () => {
       const placesContainer = document.querySelector("#places-container");
       const { state } = placesContainer.getAttribute("tour");
